@@ -1,0 +1,151 @@
+html{
+    height:100%;
+    background: radial-gradient(circle,white,grey);
+}
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: cadetblue;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 5px black;
+    position: relative;
+}
+#score{
+    background-color: yellowgreen;
+    color:blue;
+    padding:11px;
+    float:right;
+    box-shadow: 0px 4px grey;
+
+}
+#correct{
+    position:absolute;
+    left:260px;
+    background-color: green;
+    color:white;
+    padding: 11px;
+    display:none;
+    
+
+
+}
+#wrong{
+    position:absolute;
+    left:260px;
+    background-color: red;
+    color:white;
+    padding: 11px;
+    display: none;
+
+}
+#question{
+    width:450px;
+    height:150px;
+    margin:50px  auto 10px auto;
+    background-color: rgb(82, 32, 218);
+    box-shadow: 5px 5px black;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    margin-top:50px;
+}
+#ibox{
+    margin-top:20px;
+    width:450px;
+    height:50px;
+    margin:10px auto;
+    background-color: cornflowerblue;
+    width:10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 5px 5px rgb(61, 42, 165);
+
+
+}
+#choice{
+    height:100px;
+    width:450px;
+    margin:10px auto;
+}
+.box{
+    margin-top: 5px;
+    width:85px;
+    height:85px;
+    background-color: bisque;
+    float:left;
+    margin-right: 30px;
+    cursor:pointer;
+    box-shadow:0px 4px grey;
+    text-align: center;
+    line-height: 80px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+.box:hover, #startreset:hover{
+    background-color: coral;
+    color:white;
+    box-shadow: 4px 4px purple;
+}
+.box:active{
+    box-shadow: 0px opx coral;
+    color: aliceblue;
+    background-color: coral;
+}
+#b1{
+    margin-left: 10px;
+}
+#b4{
+    margin-right: 0;
+}
+#startreset{
+    bottom:0.1px;
+    width:78px;
+    padding:10px;
+    height:18px;
+    font-size: 13.5px;
+    background-color: burlywood; 
+    margin:0 auto;
+    border-radius: 3px;
+    cursor:pointer;
+    box-shadow:0px 4px grey;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s; 
+}
+#time{
+    
+    width:152px;
+    padding:9px;
+    position: absolute;
+    top: 395px;
+    left:400px;
+    background-color: rgb(139, 137, 0);
+    border-radius: 3px;
+    box-shadow: 0px 1px black;
+    bottom: 0.1px;
+    font-size:13px;
+    display:none;
+
+}
+#gameover{
+    height:200px;
+    width: 500px;
+    background: linear-gradient(orange,rgb(255, 0, 140));
+    color:white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top:100px;
+    left:45px;
+    z-index: 2;
+    display: none;
+}
