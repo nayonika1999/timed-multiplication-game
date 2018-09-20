@@ -105,6 +105,7 @@ function generateqa()
   //filling the other boxes with wrong ans.
 
   var answers=[correctans]; //contains all options
+  
 
   for(i=1; i<5; i++)
   {
@@ -116,6 +117,7 @@ function generateqa()
             wrongans= (1 + Math.round(9*Math.random())) * (1 + Math.round(9*Math.random()));
           } while(answers.indexOf(wrongans) >= 0);
             document.getElementById("b"+i).innerHTML= wrongans;
+            answers.push(wrongans);
       }
  }
  }
